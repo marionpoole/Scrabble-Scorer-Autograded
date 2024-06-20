@@ -128,9 +128,9 @@ function scorerPrompt(word) {
 
 function transform(oldPointStructure) {
    let newPointStructure = [];
-for(item in oldPointStructure) {
-for(i=0; i < oldPointStructure[item].length; i++){
-newPointStructure[oldPointStructure[item][i].toLowerCase()] = Number(item);
+for(pointsValue in oldPointStructure) {
+for(i=0; i < oldPointStructure[pointsValue].length; i++){
+newPointStructure[oldPointStructure[pointsValue][i].toLowerCase()] = Number(pointsValue);
 }
 }
 return newPointStructure;
